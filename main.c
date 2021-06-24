@@ -13,3 +13,8 @@ int main(void)
  Zdravo();
  return 0; 
 } 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> main
