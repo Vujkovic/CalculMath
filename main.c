@@ -4,7 +4,7 @@
 
 int main(void) 
 {
- printf("Zdravo iz br3-a!!!");
+ printf("10202121!!!");
  Zdravo();
  return 0; 
 } 
