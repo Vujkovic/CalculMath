@@ -1,0 +1,257 @@
+body
+{  
+   width: auto;
+   margin: 0;
+}
+
+.naslovni_bar
+{
+   background-color: #4682B4;
+width: 100%;
+height:  90px; 
+font-size:40px;
+font-family:Arial, Helvetica, sans-serif;
+ color: white;
+ 
+ left:0 ; 
+ top:0; 
+}
+
+ul 
+{
+   list-style-type: none ;
+   height: 50px;
+   width: 100%;
+  /* padding: 5px;*/
+   margin: 0px;
+   background-color: #deeaee;
+   padding: 0;
+  /* padding-right:5px;*/
+}
+
+li 
+{
+  float: left ; 
+
+}
+
+li a 
+{
+   background-color:  #0db8f1;
+   text-decoration: none;
+   padding:10px;
+   margin-left:10px; 
+ /*  border: 2px solid burlywood;*/
+}
+
+li a:hover 
+{
+    background-color: red;
+}
+/*.levi_bar 
+{
+   background-color: aquamarine; 
+   width: 200px;
+   height:  1000px;
+   position: absolute;
+} */
+/*.desni_bar 
+{
+   background-color: aquamarine;
+   width: 200px;
+   height:  1000px;
+   position: absolute;
+   right: 0 ; 
+}*/
+
+
+.Naziv3x3
+{  margin-left:60px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   position: absolute;
+}
+.Naziv3x1mnozioc
+{  margin-left:190px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+  position: absolute;
+}
+.Naziv3x1
+{  margin-left:270px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+  /*position: absolute;*/
+}
+
+.matrica_3x3
+{
+    
+  /* border:1px  solid red ; */
+   margin: 5px ; 
+
+    /*margin: auto; */
+ /* margin-top:100px;*/
+  position: absolute;
+  left: 0px;
+ 
+} 
+.pozicija_matrice_3x1
+{
+  /*  width: 175px;*/
+  /* height: 65px; */
+  /*border:1px  solid red ;*/
+  position: absolute;
+  left:  183px;
+  margin-top:5px ; 
+  
+ /* margin-bottom: 100px;*/
+  
+}
+.rezultujuca_matrica
+{
+    position: absolute;
+  /*  left: 261px ; 
+  /*  top:200px;*/
+  margin-left: 261px;
+  margin-top: -46px;
+    
+}
+.mnozioc1 
+{   
+    width: 500px;
+    height: 23px; 
+    margin-left:500px;
+    margin-top: -22px;
+    margin-bottom: 2px
+}  
+
+.Dugme_jednakosti 
+{
+  /* position: absolute;*/
+    margin-left:  231px ;
+    margin-top: 10px;
+
+}
+
+.matrica3x2
+{
+    
+  margin: 5px ; 
+
+  position: absolute;
+  left: 0px;
+ 
+} 
+ 
+.Matrica2x3
+{
+  /*  width: 175px;*/
+  /* height: 65px; */
+  /*border:1px  solid red ;*/
+  position: absolute;
+ margin-left:   140px;
+ margin-top: 17px;
+ /* margin-top:5px ; */
+}
+.Dugme_jednakosti2
+{
+    margin-left:285px ;
+    margin-top:27px;
+
+}
+
+.Postupakkocka
+{
+  position:absolute ;
+   border: solid black ; 
+  width:  350px ; 
+  height: 350px;
+  left: 10px ;
+}
+
+
+
+
+@media only screen and (min-width: 768px) 
+{  ul 
+  {
+  list-style-type: none ;
+   height: 50px;
+   width: 100%;
+   margin: 0px;
+   background-color: #0db8f1;
+   padding: 0;
+  }
+   
+        li a 
+        {
+              background-color:  #0db8f1;
+              text-decoration: none;
+              display: block;
+              /* position: absolute;*/
+              padding:15px;
+              margin-left:100px; 
+        }
+
+        li a:hover 
+        {     
+              background-color: red;
+        }
+        
+        #Pocetna 
+        {
+          padding: 50px;
+
+        }
+        .geometrija
+        {
+           position: absolute;
+           width: 200px;
+           left: 358px ; 
+           margin: 0px;
+           display: inline-block;
+        }
+        .kontakt 
+        {
+           position: absolute;
+           left: 500px ; 
+        }
+        .meni
+        {
+          width: 100%;
+          height: 49px;
+           background-color: #0db8f1;
+           position: relative;
+           display: inline-block;
+        }
+        .padajuci1 {
+         
+         display: none; 
+         position: absolute;
+         top: 50px;background-color: #f9f9f9;
+        
+         
+        }
+        .padajuci1 a {
+          color: black;
+        /*  padding: 12px 16px;*/
+          text-decoration: none;
+         /* display: block;*/
+          width: 70px;
+          
+        }
+        
+        .padajuci1 li 
+        {
+         background-color: white;
+
+        }
+
+
+        .padajuci1 a:hover {background-color: #ddd;}
+        .geometrija :hover .padajuci1 {display:block;}
+        
+
+      
+}

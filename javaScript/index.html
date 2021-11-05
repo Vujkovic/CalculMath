@@ -1,0 +1,319 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+
+</head>
+<body>
+    <div class="naslovni_bar"> 
+        <div class="naslov">Matematika</div> 
+       <!-- <div class="levi_bar"></div>
+        <div class="desni_bar"></div>  -->
+    </div>
+
+       
+    
+        
+       
+             <div class="meni">
+              <ul> 
+                     <li class="pocetna"><a href="index.html">Pocetna</a></li>
+                     <li><a href="#Primeri">Primeri</a> </li>
+                     <li class="geometrija"> <a href="#">Geometrija</a> 
+                      
+                            <ul class="padajuci1">
+                                 <li> <a href="#">Krug     </a> </li>
+                                 <li> <a href="#">Lopta    </a> </li>
+                                 <li> <a href="#">Valjak   </a> </li>
+                                 <li> <a href="#">Piramida </a> </li>
+                          </ul>
+                    
+                    </li>
+                     <li class="kontakt"><a href="stranice/kontakt.html">Kontakt</a></li>
+              </ul> 
+           </div>
+         
+
+
+      
+
+
+
+    
+<h2>Mnozenje matrica</h2>
+
+<h4 class="Naziv3x3"> 3x3</h4>
+<h4 class="Naziv3x1mnozioc"> 3x1</h4>
+   <h4 class="Naziv3x1"> 3x1</h4>
+      <div class="matrica_3x3">
+          
+           <input type="text" id="00" size="1.1"/> <!--polje [0][0] u matrici-->
+           <input type="text" id="01" size="1.1"/> <!--polje [0][1] u matrici-->
+           <input type="text" id="02" size="1.1"/> <br/> <!--polje [0][2] u matrici-->
+              
+           <input type="text" id="10" size="1.1"/> 
+           <input type="text" id="11" size="1.1"/> 
+           <input type="text" id="12" size="1.1"/> 
+               
+               <select id="operatori">
+                  <option value="X">X</option>
+                  <option value="+">+</option>
+                  <option value="-">-</option>
+                  <option value="/">/</option>
+               </select> <br/>
+  
+           <input type="text" id="20" size="1.1" /> 
+           <input type="text" id="21"size="1.1"/>
+           <input type="text" id="22"size="1.1"/> <br/>
+    </div>
+  
+ <div class="pozicija_matrice_3x1">
+      <input type="text" id="000" size="1.1"/> <br/>
+      <input type="text" id="111" size="1.1"/> <br/>
+      <input type="text" id="222" size="1.1"/> <br/>
+</div>
+
+<br/>
+
+<div class="Dugme_jednakosti">
+    <button onclick="mnozi_matrice();" > = </button>
+</div>
+
+
+
+<!--<input type="text" id="000" /><br/>
+<input type="text" id="111" /><br/>
+<input type="text" id="222" /><br/>
+-->
+
+ <!--<p> Rezultat! </p>-->
+<div class="rezultujuca_matrica">
+       <input type="text" id="r00" size="1.1" /> <br/>
+       <input type="text" id="r10" size="1.1"  /> <br/>
+       <input type="text" id="r20" size="1.1" /> <br/>
+</div>  
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div class="Matrica3x2">
+    <input type="text" id="M3x2_00" size="1.1" /> 
+    <input type="text" id="M3x2_01" size="1.1" /> <br/>
+    
+    <input type="text" id="M3x2_10" size="1.1" /> 
+    <input type="text" id="M3x2_11" size="1.1" />
+      
+    <select id="operatori">
+            <option value="X">X</option>
+          <!--  <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option> -->
+    </select> <br/>
+   
+    <input type="text" id="M3x2_20" size="1.1" /> 
+    <input type="text" id="M3x2_21" size="1.1" /> <br/>
+</div>
+
+<div class="Matrica2x3">
+      
+    <input type="text" id="M2x3_00" size="1.1"/> 
+    <input type="text" id="M2x3_01" size="1.1"/> 
+    <input type="text" id="M2x3_02" size="1.1"/> <br/>
+
+    <input type="text" id="M2x3_10" size="1.1"/> 
+    <input type="text" id="M2x3_11" size="1.1"/> 
+    <input type="text" id="M2x3_12" size="1.1"/> 
+
+</div>
+<div class="Dugme_jednakosti2">
+    <button onclick= "Mnozenje_matrica2x3_3x2();" > = </button>
+</div>
+
+<br/>
+<br/>
+
+<div class="Matrica3x3REZULTAT">
+      
+    <input type="text" id="M2_3x3_00" size="1.1"/> 
+    <input type="text" id="M2_3x3_01" size="1.1"/> 
+    <input type="text" id="M2_3x3_02" size="1.1"/> <br/>
+
+    <input type="text" id="M2_3x3_10" size="1.1"/> 
+    <input type="text" id="M2_3x3_11" size="1.1"/> 
+    <input type="text" id="M2_3x3_12" size="1.1"/> <br/>
+
+    <input type="text" id="M2_3x3_20" size="1.1"/> 
+    <input type="text" id="M2_3x3_21" size="1.1"/> 
+    <input type="text" id="M2_3x3_22" size="1.1"/>
+</div>
+
+
+<br/>
+<br/>
+
+  <p>Opšti oblik kvadratne jednačine prikazan je na slici.
+     Koeficijenti kvadratne jednacine a,b,c mogu biti   
+     kako pozitivni  
+tako i negativni brojevi </p>
+ <img src="slike/kvadratna_jednacina.png" alt="" width="300px">
+<br/><br/><br/><br/>
+
+<img src="slike/k_jednacina.png" width="300px">
+<p>Unesite koeficijente kvadratne jednacine!</p>
+
+    <label>a: </label> 
+    <input type="text" id="a" name="a" size="2"/>
+    <label>b: </label> 
+    <input type="text" id="b" name="b" size="2"/>
+    <label>c: </label> 
+    <input type="text" id="c" name="c"/ size="2">
+    
+     <button onclick="kvadratna_jednacina();"> Resi jednacinu! </button>
+
+
+    <br/>
+    <br/> 
+    <label>X1</label> 
+    <input type="text" id="X1" size="7.2"/>
+    <label>X2</label> 
+    <input type="text" id="X2" size="7.2"/>
+
+    <br/>
+    <br/><br/><br/>
+
+
+    <input class="range1" type="range" max="10" min="0" value="3">
+    <br/>
+    <br/><br/><br/>
+
+ <!-- Iz nekog razloga mora biti pre script taga! -->
+<script src="home.js"> </script>
+<link rel="stylesheet" type="text/css" href="pozicioniranje.css">
+
+
+    <script type="text/javascript" src="https://www.hostmath.com/Math/MathJax.js?config=OK"></script>   <!--Bitan Script -->
+   
+    
+       
+
+
+      <div class="Kvadratna_jednacina_formula" id="kvadOpsta">
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mfrac>
+              <mrow>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>b</mi>
+                <mo>&#x00B1;<!-- ± --></mo>
+                <msqrt>
+                  <msup>
+                    <mn>b</mn>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup> 
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>4</mn>
+                  <mi>a</mi>
+                  <mi>c</mi>
+                </msqrt>
+              </mrow>
+              <mrow>
+                <mn>2</mn>
+                <mi>a</mi>
+              </mrow>
+            </mfrac>
+          </math>
+     
+     <!--<div id="kvadOpsta1">--> 
+          <br/>
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mfrac>
+              <mrow>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi id="b-koeficijent">  </mi>
+                <mo>&#x00B1;<!-- ± --></mo>
+                <msqrt>
+                  <msup>
+                   
+                   
+                    
+                   <mrow><mi id="b1-koeficijent" > </mi></mrow> 
+                    <mrow class="MJX-TeXAtom-ORD"  style="position:static; " style="left: 100pt;" >
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>4</mn> 
+                  <mo>&#x22C5;<!-- ⋅ --></mo>
+                  <mi id="a-koeficijent" ></mi>
+                  <mo>&#x22C5;<!-- ⋅ --></mo>
+                  <mi id="c-koeficijent"></mi>
+                </msqrt>
+              </mrow>
+              <mrow>
+                <mn>2</mn>
+                <mo>&#x22C5;<!-- ⋅ --></mo>
+                <mi id="a2-koeficijent"></mi>
+              </mrow>
+            </mfrac>
+          </math>
+
+          <br/>
+
+          <math  display="block">
+            <mfrac>
+              <mrow>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi id="b3-koeficijent">  </mi>
+                <mo>&#x00B1;<!-- ± --></mo>
+                <msqrt>
+                  <msup>
+                    <mi id="sqr_b"></mi>
+                  </msup>
+                  <mo>-</mo>
+                  
+                  <mi id="ac4" ></mi>
+                 
+                </msqrt>
+              </mrow>
+               <mrow> 
+                 <mi id="a2dole"></mi>
+              </mrow> 
+            </mfrac>
+          
+
+          </math>
+           <br> 
+        <math >  
+            <mfrac >  
+              <mrow>
+              <mn id="primer" style="height: 5px;"> </mn>  </mrow>
+              <mi>x</mi>  
+            </mfrac>  
+          </math>  
+
+
+
+
+
+      </div>
+
+       
+      <div class="Postupakkocka" id="KvadratPostupak" aria-placeholder="Postupak ...">
+           <h6 >  Formula </h6>
+      </div> <br/>
+      
+     <button onclick="Postupak();" id="dugme_resi_zadatak">Resi zadatak </button> 
+
+
+
+
+
+    </body>
+</html>
